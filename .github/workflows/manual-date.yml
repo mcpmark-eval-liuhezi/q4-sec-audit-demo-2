@@ -1,0 +1,11 @@
+name: Manual date print
+
+on:
+  workflow_dispatch:
+
+jobs:
+  print-date:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print the current date
+        run: echo "$(date)"
